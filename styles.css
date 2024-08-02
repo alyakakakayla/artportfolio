@@ -247,6 +247,78 @@ section {
 
 #graphic-container, #ui-container, #illustrations-container, #concept-container {
     margin: 40px;
+    overflow-x: hidden;
+
+}
+
+.graphic-list {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    /*justify-self: center;
+    justify-content: center;*/
+}
+
+.graphic-list li {
+    margin: 10px;
+}
+
+.graphic-list img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+
+}
+
+.ui-list {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.ui-list li {
+    margin: 10px;
+}
+
+.ui-list img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+
+}
+
+.illustration-list {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.illustration-list li {
+    margin: 10px;
+}
+
+.illustration-list img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+
+}
+
+.concept-list {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.concept-list li {
+    margin: 10px;
+}
+
+.concept-list img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+
 }
 
 /*--------------------------------footer--------------------------------*/
@@ -330,9 +402,23 @@ section {
         line-height: 20px;
         padding-top: 3%;
     }
+
+    .graphic-list img, .illustration-list img, .ui-list img, .concept-list img {
+        width: 160px;
+        height: 160px;
+    
+    }
 }
 
 @media (max-width: 480px) {
+
+    #graphic-container, #illustrations-container, #ui-container, #concept-container {
+        margin: 10px;
+    }
+    #work .work-titles {
+        margin: 0 10px 0 10px;
+    }
+
     #welcome h1 {
         font-size: 20px;
         margin: 20px;
