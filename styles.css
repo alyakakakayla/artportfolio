@@ -96,6 +96,11 @@ html {
     background-color: transparent;
 }
 
+#about /*, #graphic, #ui, #illustration, #concept, #contact */{
+    height: fit-content;
+    background-color: #ffffff;
+}
+
 /*--------------------------------welcome backdrop--------------------------------*/
 section {
     z-index: 0;
@@ -132,7 +137,7 @@ section {
     position: relative;
     width: 100%; /* fit-content after fixing navbar */
     height: auto;
-    padding-top: 45vh;
+    padding-top: 40vh;
 }
 
 #welcome h1 {
@@ -142,26 +147,93 @@ section {
 }
 
 #welcome h6 {
-    font-weight: 300;
+    font-weight: 500;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'DM Serif Display';
+}
+
+#welcome .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stacked-text {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 400;
 }
 
 .bold-welcome {
     font-family: 'DM Serif Display', sans-serif;
-    font-size: 70px;
+    font-size: 80px;
     animation: changeinvert 5s infinite alternate;
+    padding: 20px 5px 20px 20px;
 }
 
 .bold-subtitle {
-    font-family: 'DM Serif Display', sans-serif;
-    animation: changeinvert 5s infinite alternate;
+    font-weight: 300;
 }
 
 .bold {
     font-family: 'DM Serif Display', sans-serif;
     font-size: 60px;
-    color: #ffffff;
+    color: #000000;
+}
+
+
+/*--------------------------------about--------------------------------*/
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    /*padding-top: 3%;*/
+}
+
+#about h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+    font-weight: 100; /*user agent overwrites*/
+}
+
+
+#about .container .description {
+    /* color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 70%; */
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: fit-content;
+}
+
+#about .container .description span {
+    text-decoration: underline;
+}
+
+#about .container .description span:hover {
+    color: #b972d1;
+}
+
+#about .container .description span a:hover {
+    color: #b972d1;
 }
 
 
@@ -201,13 +273,6 @@ section {
 
 @media (max-width: 1024px) {
 
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 480px) {
     .navbar ul {
         padding-top: 80px;
         position: fixed;
@@ -230,5 +295,51 @@ section {
     #check:checked ~ ul {
         padding-top: 80px;
         right: 0;
+    }
+    #about .container {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 3%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #about .container .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome h1 {
+        font-size: 28px;
+        margin: 20px;
+        padding: 0;
+    }
+    
+    #welcome h6 {
+        font-size: 20px;
+    }
+    .stacked-text {
+        font-size: 15px;
+    }
+
+    .bold-subtitle {
+        font-size: 18px;
+    }
+    
+    .bold-welcome {
+        font-size: 70px;
+        padding: 18px 5px 18px 18px;
+    }
+    
+    #about .container .description {
+        padding-bottom: 3%;
     }
 } 
