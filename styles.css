@@ -96,7 +96,7 @@ html {
     background-color: transparent;
 }
 
-#about /*, #graphic, #ui, #illustration, #concept, #contact */{
+#about, #work, #contact {
     height: fit-content;
     background-color: #ffffff;
 }
@@ -171,7 +171,7 @@ section {
     font-family: 'DM Serif Display', sans-serif;
     font-size: 80px;
     animation: changeinvert 5s infinite alternate;
-    padding: 20px 5px 20px 20px;
+    padding: 20px 5px 20px 10px;
 }
 
 .bold-subtitle {
@@ -236,6 +236,18 @@ section {
     color: #b972d1;
 }
 
+/*--------------------------------work--------------------------------*/ 
+
+#work h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+    font-weight: 100; /*user agent overwrites*/
+}
+
+#graphic-container, #ui-container, #illustrations-container, #concept-container {
+    margin: 40px;
+}
 
 /*--------------------------------footer--------------------------------*/
 .footer-images img {
@@ -286,6 +298,7 @@ section {
 
     .navbar ul li {
         display: block;
+        line-height: 65px;
     }
 
     .checkbutton {
@@ -306,6 +319,9 @@ section {
 }
 
 @media (max-width: 768px) {
+    .bold {
+        font-size: 45px;
+    }
     #about .container .description {
         padding-left: 20px;
         padding-right: 20px;
@@ -318,7 +334,7 @@ section {
 
 @media (max-width: 480px) {
     #welcome h1 {
-        font-size: 28px;
+        font-size: 20px;
         margin: 20px;
         padding: 0;
     }
@@ -336,7 +352,7 @@ section {
     
     .bold-welcome {
         font-size: 70px;
-        padding: 18px 5px 18px 18px;
+        padding: 18px 5px 18px 5px;
     }
     
     #about .container .description {
