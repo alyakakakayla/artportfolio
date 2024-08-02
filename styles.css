@@ -245,10 +245,14 @@ section {
     font-weight: 100; /*user agent overwrites*/
 }
 
+#work .work-titles {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
 #graphic-container, #ui-container, #illustrations-container, #concept-container {
     margin: 40px;
     overflow-x: hidden;
-
 }
 
 .graphic-list {
@@ -416,7 +420,8 @@ section {
         margin: 10px;
     }
     #work .work-titles {
-        margin: 0 10px 0 10px;
+        margin-left: 10px;
+        font-size: 18px;
     }
 
     #welcome h1 {
