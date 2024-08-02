@@ -254,11 +254,15 @@ section {
     margin: 40px;
     overflow-x: hidden;
 }
-
+.image-wrapper {
+    scroll-snap-align: center;
+}
 .graphic-list {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     /*justify-self: center;
     justify-content: center;*/
 }
@@ -271,14 +275,14 @@ section {
     object-fit: cover;
     width: 230px;
     height: 230px;
-
 }
 
 .ui-list {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
-}
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;}
 
 .ui-list li {
     margin: 10px;
@@ -292,10 +296,11 @@ section {
 }
 
 .illustration-list {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
-}
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;}
 
 .illustration-list li {
     margin: 10px;
@@ -309,10 +314,11 @@ section {
 }
 
 .concept-list {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
-}
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;}
 
 .concept-list li {
     margin: 10px;
