@@ -557,6 +557,9 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
+    #welcome {
+        padding-top: 35vh;
+    }
 
     #graphic-container, #illustrations-container, #ui-container, #concept-container {
         margin: 10px;
