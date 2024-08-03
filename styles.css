@@ -181,7 +181,8 @@ section {
 .bold {
     font-family: 'DM Serif Display', sans-serif;
     font-size: 60px;
-    color: #000000;
+    /*color: #000000;*/
+    animation: change 4s alternate infinite;
 }
 
 
@@ -237,6 +238,10 @@ section {
 }
 
 /*--------------------------------work--------------------------------*/ 
+
+#work {
+    padding-bottom: 5%;
+}
 
 #work h1 {
     text-align: center;
@@ -363,6 +368,16 @@ section {
     height: 145px;
 }
 
+/*--------------------------------animations--------------------------------*/
+@keyframes change {
+    0% {
+        color: #b972d1;
+    }
+    100% {
+        color: #ffa778;
+    }
+}
+
 /*--------------------------------media queries--------------------------------*/
 
 @media (max-width: 1024px) {
@@ -378,10 +393,6 @@ section {
         transition: all 0.5s;
     }
 
-    .navbar ul li {
-        display: block;
-        line-height: 65px;
-    }
 
     .checkbutton {
         display: block;
@@ -401,6 +412,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        line-height: 65px;
+    }
     .bold {
         font-size: 45px;
     }
