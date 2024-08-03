@@ -493,6 +493,9 @@ textarea:focus {
         transition: all 0.5s;
     }
 
+    .navbar ul li {
+        display: block;
+    }
 
     .checkbutton {
         display: block;
@@ -513,7 +516,6 @@ textarea:focus {
 
 @media (max-width: 768px) {
     .navbar ul li {
-        display: block;
         line-height: 65px;
     }
     .bold {
