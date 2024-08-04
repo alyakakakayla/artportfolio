@@ -515,6 +515,10 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+    /*.navbar {
+        height: 50px;
+    }*/
+
     .navbar ul {
         /*overflow-y: scroll;*/
         /*display: flex;*/
@@ -532,6 +536,7 @@ textarea:focus {
     }
     #welcome h6 {
         font-size: 18px;
+        padding: 0;
     }
     .stacked-text {
         font-size: 15px;
@@ -579,9 +584,9 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
-    #welcome {
+    /*#welcome {
         padding-top: 35vh;
-    }
+    }*/
 
     #graphic-container, #illustrations-container, #ui-container, #concept-container {
         margin: 20px 10px 20px 10px;
