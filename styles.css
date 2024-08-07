@@ -643,3 +643,17 @@ textarea:focus {
         /* padding: 18px 0px 150px 9px; */
     }
 } 
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 20px;
+}
