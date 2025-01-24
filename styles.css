@@ -109,10 +109,10 @@ section {
     background: linear-gradient(-135deg, #ffa778, #dc8ff6);
     background-size: 200% 200%;
     position: relative;
-    animation: change 10s ease-in-out infinite;
+    animation: changebg 10s ease-in-out infinite;
 }
 
-@keyframes change {
+@keyframes changebg {
     0% {
         background-position: 0 50%;
     }
