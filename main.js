@@ -11,7 +11,7 @@ const checkbox = document.getElementById('check')
 
 navWelcome.addEventListener("click", uncheck);
 navAbout.addEventListener("click", uncheck);
-navComm.addEventListener("click", uncheck);
+navComm.addEventListener("click", uncheck); 
 navGraphic.addEventListener("click", uncheck);
 navUI.addEventListener("click", uncheck);
 navIllus.addEventListener("click", uncheck);
