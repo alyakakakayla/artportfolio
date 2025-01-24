@@ -255,13 +255,34 @@ section {
     font-size: 25px;
 }
 
-#graphic-container, #ui-container, #illustrations-container, #concept-container {
+#graphic-container, #ui-container, #illustrations-container, #fanart-container, #concept-container, #comm-container {
     margin: 60px 40px 60px 40px;
     overflow-x: hidden;
 }
 .image-wrapper {
     scroll-snap-align: center;
 }
+.comm-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /*justify-self: center;
+    justify-content: center;*/
+}
+
+.comm-list li {
+    margin: 10px;
+}
+
+.comm-list img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+}
+
+
 .graphic-list {
     width: 100%;
     display: flex;
@@ -312,6 +333,24 @@ section {
 }
 
 .illustration-list img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+
+}
+
+.fanart-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;}
+
+.fanart-list li {
+    margin: 10px;
+}
+
+.fanart-list img {
     object-fit: cover;
     width: 230px;
     height: 230px;
@@ -557,7 +596,7 @@ textarea:focus {
         padding-top: 3%;
     }
 
-    .graphic-list img, .illustration-list img, .ui-list img, .concept-list img {
+    .comm-list img, .graphic-list img, .illustration-list img, .ui-list img, .fanart-list img, .concept-list img {
         width: 160px;
         height: 160px;
     
@@ -588,7 +627,7 @@ textarea:focus {
         padding-top: 35vh;
     }*/
 
-    #graphic-container, #illustrations-container, #ui-container, #concept-container {
+    #comm-container, #graphic-container, #illustrations-container, #ui-container, #fanart-container, #concept-container {
         margin: 20px 10px 20px 10px;
     }
     #work .work-titles {
