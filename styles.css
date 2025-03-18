@@ -252,7 +252,8 @@ section {
 
 #work .work-titles {
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 #graphic-container, #ui-container, #illustrations-container, #fanart-container, #concept-container, #comm-container {
