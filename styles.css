@@ -291,6 +291,10 @@ section {
     cursor: pointer;
 }
 
+#concept-scroll, #illustrations-scroll, #fanart-scroll, #graphic-scroll {
+    scroll-margin-top: 80px;
+}
+
 #work {
     padding-bottom: 5%;
 }
