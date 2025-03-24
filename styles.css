@@ -246,6 +246,7 @@ section {
 
 .modal .close:hover {
     cursor: pointer;
+    color: #ffa778;
 }
 
 .modal p {
