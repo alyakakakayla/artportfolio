@@ -17,7 +17,7 @@ html {
 
 /*--------------------------------navbar--------------------------------*/
 .navbar {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     display: flex;
     height: 78px;
@@ -238,7 +238,50 @@ section {
     color: #b972d1;
 }
 
-/*--------------------------------work--------------------------------*/ 
+/*--------------------------------work--------------------------------*/
+
+.modal .close {
+    font-size: 64px;
+}
+
+.modal p {
+    margin: 24px;
+    font-size: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 24px;
+    margin-top: 40px;
+    width: 80%;
+    height: fit-content;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    background-color: rgb(233, 233, 233);
+}
+  
+.modal-content {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    justify-content: center;    
+}
+  
+#modal-image {
+    display: inline-block;
+    max-width: 90%;  
+    max-height: 400px; 
+    object-fit: contain; 
+    margin: 0 auto;
+    
+}
 
 #work {
     padding-bottom: 5%;
@@ -521,6 +564,13 @@ textarea:focus {
 
 /*--------------------------------media queries--------------------------------*/
 
+@media (max-width: 1600px) {
+    .modal-content {
+        flex-direction: column;
+
+    }
+}
+
 @media (max-width: 1024px) {
 
     .navbar ul {
@@ -552,7 +602,6 @@ textarea:focus {
         padding-left: 20px;
         padding-top: 3%;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -596,6 +645,10 @@ textarea:focus {
         font-weight: 300;
         line-height: 20px;
         padding-top: 3%;
+    }
+
+    .modal p {
+        font-size: 15px;
     }
 
     .comm-list img, .graphic-list img, .illustration-list img, .ui-list img, .fanart-list img, .concept-list img {
@@ -658,6 +711,11 @@ textarea:focus {
     #about .container .description {
         padding-bottom: 3%;
     }
+
+    .modal p {
+        margin: 12px
+    }
+
     .form-container form {
         width: 280px;
     }
