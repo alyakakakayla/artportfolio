@@ -244,6 +244,10 @@ section {
     font-size: 64px;
 }
 
+.modal .close:hover {
+    cursor: pointer;
+}
+
 .modal p {
     margin: 24px;
     font-size: 20px;
@@ -281,6 +285,10 @@ section {
     object-fit: contain; 
     margin: 0 auto;
     
+}
+
+.expandable:hover {
+    cursor: pointer;
 }
 
 #work {
