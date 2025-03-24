@@ -268,7 +268,7 @@ section {
     max-height: 80vh;
     overflow: scroll;
     scrollbar-width: none;
-    background-color: rgb(233, 233, 233);
+    background-color: rgba(255, 255, 255, 0.8);
 }
   
 .modal-content {
