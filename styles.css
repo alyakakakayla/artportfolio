@@ -242,6 +242,7 @@ section {
 
 .modal .close {
     font-size: 56px;
+    margin: 0 24px 0 0;
 }
 
 .modal .close:hover {
@@ -261,7 +262,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    padding: 0 16px 0 24px;
+    padding: 48px;
     margin-top: 40px;
     width: 80%;
     height: fit-content;
@@ -578,6 +579,10 @@ textarea:focus {
 /*--------------------------------media queries--------------------------------*/
 
 @media (max-width: 1600px) {
+
+    .modal {
+        padding: 0 16px 0 24px;
+    }
     .modal-content {
         flex-direction: column;
 
